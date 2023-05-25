@@ -13,5 +13,7 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5']
 
   s.source_files = 'Sources/**/*.swift'
-  s.resources = "Sources/Resources/*.xcassets"
+  s.resource_bundles = {
+    "Autobooks" => "Sources/Resources/*.xcassets"
+  }
 end
